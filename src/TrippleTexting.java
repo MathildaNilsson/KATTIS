@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TrippleTexting {
@@ -9,10 +8,10 @@ public class TrippleTexting {
         int sentenceLength = stringLength/3;
         String firstWord = s.substring(0,sentenceLength);
         String secondWord = s.substring(sentenceLength,sentenceLength+sentenceLength);
-        String thirdword = s.substring(sentenceLength+sentenceLength, sentenceLength+sentenceLength+sentenceLength);
-        if(firstWord.equals(secondWord) || firstWord.equals(thirdword)){
+        String thirdWord = s.substring(sentenceLength+sentenceLength, sentenceLength+sentenceLength+sentenceLength);
+        if(firstWord.equals(secondWord) || firstWord.equals(thirdWord)){
             System.out.println(firstWord);
-        }else if(secondWord.equals(thirdword)){
+        }else if(secondWord.equals(thirdWord)){
             System.out.println(secondWord);
         }
     }
